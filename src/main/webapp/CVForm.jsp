@@ -20,7 +20,7 @@
 <div class="resume_wrapper">
     <div class="resume_left">
         <div class="resume_image">
-            <img src="th.jpg">
+            <img src="Logo.jpg">
         </div>
         <div class="resume_bottom">
             <div class="resume_item resume_namerole">

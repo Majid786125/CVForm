@@ -5,21 +5,21 @@
     <title>JSP - Hello World</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body>
+<body style="background-color: lightslategray">
 <%--<h1><%= "CV Form!" %>
 </h1>--%>
 <br/>
 <div <%--class="container"--%>>
     <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
+        <div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card"  style="background-color: linen">
             <h1 class="text-center">CV FORM</h1>
             <h2>Personal Information</h2>
             <div class="card-body">
                 <form action="CVForm.jsp" method="POST">
-                    <div class="form-group">
+                    <%--<div class="form-group">
                         <label>Upload Image</label>
-                        <input type="file" name="fileName" <%--th:field="*{firstName}"--%> class="form-control" placeholder="Upload Your Image"/>
-                    </div>
+                        <input type="file" name="fileName" &lt;%&ndash;th:field="*{firstName}"&ndash;%&gt; class="form-control" placeholder="Upload Your Image"/>
+                    </div>--%>
                     <div class="form-group">
                         <label>First Name</label>
                         <input type="text" name="firstName" <%--th:field="*{firstName}"--%> class="form-control" placeholder="Enter Student First Name"/>
@@ -122,13 +122,13 @@
                     <br>
                     <input type="text" name="description1" class="form-control" placeholder="Description">
                     <br>
-                    <input type="date" name="E1date" <%--th:field="*{email}"--%> class="form-control"/>
+                    <input type="text" name="E1date" <%--th:field="*{email}"--%> placeholder="Enter Working Year" class="form-control"/>
                     <br>
                     <input type="text" name="experience2" <%--th:field="*{email}"--%> class="form-control" placeholder="Enter Oraganization Name 2"/>
                     <br>
                     <input type="text" name="description2" class="form-control" placeholder="Description">
                     <br>
-                    <input type="date" name="E2date" <%--th:field="*{email}"--%> class="form-control"/>
+                    <input type="text" name="E2date" <%--th:field="*{email}"--%>  placeholder="Enter Working Year" class="form-control"/>
                     <%-- <input type="text" name="country" &lt;%&ndash;th:field="*{email}"&ndash;%&gt; class="form-control" placeholder="Enter Your Address"/>--%>
                     <br>
                     <br>
